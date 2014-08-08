@@ -126,11 +126,24 @@ public class HomeController {
 		}
 		return returnUrl;
 		
-		
 	}
 	
-	
+	/**
+	 * CASE 5 : Don't have Validator
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value = "/join5", method = RequestMethod.GET)
+	public String join5(Model model) {
+		model.addAttribute("color", "info");
+		return "join3";
+	}
 
-	
+	@RequestMapping(value = "/join5", method = RequestMethod.POST)
+	public String joinSubmit5(Model model, @ModelAttribute User user) {
+		model.addAttribute("color", "info");
+		
+		return "redirect:/";
+	}
 	
 }
