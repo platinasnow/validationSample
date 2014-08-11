@@ -19,7 +19,7 @@
 <body>
 <div class="container">
 	<h2>${title }</h2>
-	<form:form commandName="user" method="post">
+	<form method="post">
 	
 	<div class="panel panel-${color}">
 		<div class="panel-heading">JOIN</div>
@@ -77,7 +77,7 @@
 	</div>
 	
 	<button type="submit" class="btn btn-${color}">전송</button>
-</form:form>
+</form>
 </div>
 </body>
 <script type="text/javascript">
